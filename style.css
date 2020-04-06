@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue:hsl(212, 86%, 64%);
+
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--veryLightGray);
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 2em;
+    width: 90%;
+    text-align: center;
+    color: var(--veryDarkBlue);
+}
+
+.intro{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+h1{
+    font-weight: 400;
+    margin: 0;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+p{
+    color: var(--grayishBlue);
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    padding: 1.5em;
+    border-radius: 5px;
+    background: #fff;
+    margin: 1.5em 0.75em;
+    max-width: 350px;
+    box-shadow: 0px 5px 8px 5px rgba(140,179,193,0.2);
+}
+
+.card .text{
+    text-align: left;
+}
+
+.card .text h3{
+    font-weight: 600;
+    margin: 0;
+}
+
+.text p{
+    font-weight: 200;
+    color: var(--grayishBlue);
+    font-size: 15px;
+}
+
+.card-cyan{
+    border-top: 3px solid var(--cyan);
+    position: relative;
+    top: 120px;
+}
+
+.card-red{
+    border-top: 3px solid var(--red);
+}
+
+.card-orange{
+    border-top: 3px solid var(--orange);
+}
+
+.card-blue{
+    border-top: 3px solid var(--blue);
+    position: relative;
+    top: 120px;
+}
+
+.image{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+footer{
+    text-align: center;
+    color: var(--grayishBlue);
+    font-size: 15px;
+}
+
+footer a {
+    color: var(--veryDarkBlue);
+}
+
+
+@media(max-width:750px){
+    
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-cyan, .card-blue{
+        position: static;
+    }
+
+    .card{
+        margin: 0.5em 0;
+    }
+    
+    .card-orange{
+        margin-top: 1em;
+    }
+
+}
